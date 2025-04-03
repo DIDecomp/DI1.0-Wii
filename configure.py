@@ -227,7 +227,7 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/1.3.2"
+config.linker_version = "Wii/1.7"
 
 
 # Helper function for Dolphin libraries

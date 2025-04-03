@@ -1,17 +1,17 @@
 Sections:
 	.text       type:code align:32
-	.init       type:code align:4
-	extab       type:rodata align:8
+	.init       type:code align:4096
+	extab       type:rodata align:32
 	extabindex  type:rodata align:32
 	.ctors      type:rodata align:32
 	.dtors      type:rodata align:32
-	.sdata2     type:rodata align:32
-	.sbss2      type:bss align:8
-	.rodata     type:rodata align:32
+	.sdata2     type:rodata align:4096
+	.sbss2      type:bss align:4
+	.rodata     type:rodata align:64
 	.sdata      type:data align:32
-	.sbss       type:bss align:32
-	.data       type:data align:32
-	.bss        type:bss align:64
+	.sbss       type:bss align:4096
+	.data       type:data align:4096
+	.bss        type:bss align:4096
 
 game/file_802F866C.cpp:
 	.text       start:0x802F866C end:0x80303870

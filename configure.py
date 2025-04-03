@@ -266,22 +266,22 @@ def MatchingFor(*versions):
 config.warn_missing_source = False
 config.libs = [
     {
+        "lib": "Game",
+        "mw_version": config.linker_version,
+        "cflags": cflags_runtime,
+        "progress_category": "game",
+        "objects": [
+            Object(NonMatching, "game/file_802F886C.cpp"),
+        ],
+    },
+    {
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
         "cflags": cflags_runtime,
         "progress_category": "sdk",  # str | List[str]
         "objects": [
             Object(NonMatching, "sdk/Runtime.PPCEABI.H/Runtime/global_destructor_chain.c"),
-            Object(Matching, "sdk/Runtime.PPCEABI.H/Runtime/__init_cpp_exceptions.cpp"),
-        ],
-    },
-    {
-        "lib": "Game",
-        "mw_version": config.linker_version,
-        "cflags": cflags_runtime,
-        "progress_category": "game",
-        "objects": [
-            Object(Matching, "game/file_802F886C.cpp"),
+            Object(NonMatching, "sdk/Runtime.PPCEABI.H/Runtime/__init_cpp_exceptions.cpp"),
         ],
     },
 ]

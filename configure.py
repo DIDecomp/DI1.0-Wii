@@ -271,8 +271,8 @@ config.libs = [
         "cflags": cflags_runtime,
         "progress_category": "sdk",  # str | List[str]
         "objects": [
-            Object(NonMatching, "src/sdk/Runtime.PPCEABI.H/Runtime/global_destructor_chain.c"),
-            Object(Matching, "src/sdk/Runtime.PPCEABI.H/Runtime/__init_cpp_exceptions.cpp"),
+            Object(NonMatching, "sdk/Runtime.PPCEABI.H/Runtime/global_destructor_chain.c"),
+            Object(Matching, "sdk/Runtime.PPCEABI.H/Runtime/__init_cpp_exceptions.cpp"),
         ],
     },
 ]

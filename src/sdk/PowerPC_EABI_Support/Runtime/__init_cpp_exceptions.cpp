@@ -1,6 +1,6 @@
 /* https://github.com/SwareJonge/mkdd/blob/main/libs/PowerPC_EABI_Support/src/Runtime/__init_cpp_exceptions.cpp */
 
-#include "src/sdk/PowerPC_EABI_Support/Runtime/__init_cpp_exceptions.h"
+#include "sdk/PowerPC_EABI_Support/Runtime/__init_cpp_exceptions.h"
 
 #include "decomp.h"
 #include "MWCPlusLib.h"

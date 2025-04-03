@@ -13,10 +13,12 @@ Sections:
 	.data       type:data align:32
 	.bss        type:bss align:64
 
-src/game/file_802F866C.cpp:
+game/file_802F866C.cpp:
+	.text       start:0x802F866C end:0x80303870
 	.sdata2     start:0x804852C0 end:0x804852D8
+	.data       start:0x804D59A0 end:0x804D59E0
 
-src/sdk/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+sdk/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8046195C end:0x80461990
 	.ctors      start:0x804827E0 end:0x804827E4 rename:.ctors$10
 	.dtors      start:0x80482880 end:0x80482884 rename:.dtors$10

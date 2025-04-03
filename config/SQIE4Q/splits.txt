@@ -1,5 +1,5 @@
 Sections:
-	.text       type:code align:8
+	.text       type:code align:32
 	.init       type:code align:4
 	extab       type:rodata align:8
 	extabindex  type:rodata align:32

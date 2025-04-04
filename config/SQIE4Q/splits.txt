@@ -6,11 +6,11 @@ Sections:
 	.ctors      type:rodata align:32
 	.dtors      type:rodata align:32
 	.sdata2     type:rodata align:4096
-	.sbss2      type:bss align:4
+	.sbss2      type:bss align:32
 	.rodata     type:rodata align:64
-	.sdata      type:data align:32
-	.sbss       type:bss align:4096
-	.data       type:data align:4096
+	.sdata      type:data align:1024
+	.sbss       type:bss align:32
+	.data       type:data align:32
 	.bss        type:bss align:4096
 
 game/file_802F866C.cpp:

@@ -61,6 +61,17 @@ void fn_8044A830(void*, void*);
 void fn_80461268(OSTime, s32, s32);
 void fn_80461724();
 
+void fn_80008260(void) {
+    OSTime start;
+    OSTime elapsed;
+
+    start = OSGetTime();
+    fn_80008188();
+    elapsed = OSGetTime() - start;
+    fn_80461268(elapsed, 0, OSMillisecondsToTicks(1));
+    fn_80461724();
+}
+
 void main(s32 arg0, s32 arg1) {
     fn_8008ACA4();
     fn_800084A4(arg0, arg1);
@@ -101,15 +112,4 @@ void fn_800084A4(void) {
     fn_803B94D0(&fn_80008FDC);
     fn_800645E0();
     fn_800451FC();
-}
-
-void fn_80008260(void) {
-    OSTime start;
-    OSTime elapsed;
-
-    start = OSGetTime();
-    fn_80008188();
-    elapsed = OSGetTime() - start;
-    fn_80461268(elapsed, 0, OSMillisecondsToTicks(1));
-    fn_80461724();
 }

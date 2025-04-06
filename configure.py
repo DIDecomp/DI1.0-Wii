@@ -187,8 +187,8 @@ cflags_base = [
     "-fp hardware",
     "-Cpp_exceptions off",
     # "-W all",
-    "-O4,s",
-    "-use_lmw_stmw on",
+    "-O4,s",  # modified
+    "-use_lmw_stmw on",  # added
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
@@ -197,8 +197,11 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-    "-enc SJIS",  # For Wii compilers, replace with `-enc SJIS`
+    "-enc SJIS",
+    "-ipa file",  # added
+    "-sdata 32",  # added
     "-i include",
+    "-i include/dolphin",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",

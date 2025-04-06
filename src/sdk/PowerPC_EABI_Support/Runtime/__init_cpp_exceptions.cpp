@@ -3,9 +3,9 @@
 #include "sdk/PowerPC_EABI_Support/Runtime/__init_cpp_exceptions.h"
 
 #include "decomp.h"
-#include "MWCPlusLib.h"
-#include "NMWException.h"
-#include "__ppc_eabi_linker.h"
+#include "sdk/PowerPC_EABI_Support/MWCPlusLib.h"
+#include "sdk/PowerPC_EABI_Support/Runtime/NMWException.h"
+#include "sdk/PowerPC_EABI_Support/Runtime/__ppc_eabi_linker.h"
 
 static int fragmentID = -2;
 

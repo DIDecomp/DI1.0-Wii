@@ -187,7 +187,8 @@ cflags_base = [
     "-fp hardware",
     "-Cpp_exceptions off",
     # "-W all",
-    "-O4,p",
+    "-O4,s",
+    "-use_lmw_stmw on",
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
@@ -196,7 +197,7 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
+    "-enc SJIS",  # For Wii compilers, replace with `-enc SJIS`
     "-i include",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
@@ -271,7 +272,7 @@ config.libs = [
         "cflags": cflags_runtime,
         "progress_category": "game",
         "objects": [
-            Object(NonMatching, "game/file_802F886C.cpp"),
+            Object(NonMatching, "game/file_80008000.cpp"),
         ],
     },
     {

@@ -13,10 +13,10 @@ Sections:
 	.data       type:data align:32
 	.bss        type:bss align:4096
 
-game/file_802F866C.cpp:
-	.text       start:0x802F866C end:0x80303870
-	.sdata2     start:0x804852C0 end:0x804852D8
-	.data       start:0x804D59A0 end:0x804D59E0
+game/file_80008000.cpp:
+	.text       start:0x80008000 end:0x8000A2CC
+	.data       start:0x804BD7C0 end:0x804BD848
+	.bss        start:0x80502010 end:0x80503D00
 
 sdk/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8046195C end:0x80461990

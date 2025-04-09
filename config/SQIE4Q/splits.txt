@@ -20,6 +20,16 @@ game/file_80008000.cpp:
 	.data       start:0x804BD7C0 end:0x804BD848
 	.bss        start:0x80502010 end:0x80503D00
 
+game/file_8000A2CC.cpp:
+	.text       start:0x8000A2CC end:0x8000A318
+
+game/file_8000A318.cpp:
+	.text       start:0x8000A318 end:0x8000A3B0
+	.ctors      start:0x804827E4 end:0x804827E8
+
+game/file_8000A3B0.cpp:
+	.text       start:0x8000A3B0 end:0x800470B4
+
 sdk/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8046195C end:0x80461990
 	.ctors      start:0x804827E0 end:0x804827E4 rename:.ctors$10

@@ -276,6 +276,9 @@ config.libs = [
         "progress_category": "game",
         "objects": [
             Object(NonMatching, "game/file_80008000.cpp"),
+            Object(NonMatching, "game/file_8000A2CC.cpp"),
+            Object(NonMatching, "game/file_8000A318.cpp"),
+            Object(NonMatching, "game/file_8000A3B0.cpp"),
         ],
     },
     {

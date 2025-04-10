@@ -34,13 +34,13 @@ unkStruct_008000* fn_80008000(const char*);
 void fn_80008188();
 void fn_80008260();
 void fn_800082C0();
-extern s32 fn_80008358();
-extern void fn_80008450();
-extern void fn_8000849C();
+s32 fn_80008358();
+void fn_80008450();
+void fn_8000849C();
 void fn_800084A4(s32, s32);
-extern void fn_800087A4();
-extern void fn_80008FD0();
-extern void fn_80008FDC();
+void fn_800087A4();
+void fn_80008FD0();
+void fn_80008FDC();
 void fn_80008FE8();
 void fn_80009070();
 void fn_80009F60(unkStruct_008188*);
@@ -49,7 +49,8 @@ s32 fn_80009FBC(unkStruct_008188*, const char*);
 void fn_8000A020(unkStruct_008188*);
 s32 fn_8000A064(unkStruct_008188*);
 void fn_8000A0E0(unkStruct_008188*, unkStruct_008000*, s32, s32);
-// ...
+
+// external
 class unkClass {
     public:
         virtual ~unkClass() {}
@@ -60,35 +61,35 @@ class unkClass {
 extern unkClass* lbl_804BC764;
 extern u8 lbl_804BC77B;
 
-s32 fn_80042624();
-void fn_80042734(s32);
-void fn_80044EF4();
-void fn_800451FC();
-void fn_800645E0();
-void fn_800646A8(s32, s32(*)(), u32, u32);
-void fn_8008ACA4();
-void fn_8008ACE8(s32);
-s32 fn_8008AE00(s32);
-unkStruct_008000* fn_8008AEA0(s32, s32, s32);
-s32 fn_8008AEBC(s32, s32, s32, s32);
-void fn_8008AEEC(unkStruct_008000*);
-void fn_803B3B30(unkStruct_008000*);
-void fn_803B7620(s32*, void*, s32, s32, s32, s32, s32);
-void fn_803B7D50(s32*);
-void fn_803B94D0(void*);
-void fn_803B95C0(void*);
-void fn_8042DBD0(u32, f32, f32);
-void fn_8042DC60(u32, f32, f32);
-void fn_8042DC80(u32, f32, f32);
-void fn_8042DCA0(u32, f32, f32);
-void fn_8042DCC0(u32, f32, f32);
-void fn_804318D0();
-void fn_8043D6F0();
-void fn_80444180();
-void fn_80445820();
-void fn_8044A830(void*, void*);
-void fn_80461268(OSTime, s32, s32);
-void fn_80461724();
+extern s32 fn_80042624();
+extern void fn_80042734(s32);
+extern void fn_80044EF4();
+extern void fn_800451FC();
+extern void fn_800645E0();
+extern void fn_800646A8(s32, s32(*)(), u32, u32);
+extern void fn_8008ACA4();
+extern void fn_8008ACE8(s32);
+extern s32 fn_8008AE00(s32);
+extern unkStruct_008000* fn_8008AEA0(s32, s32, s32);
+extern s32 fn_8008AEBC(s32, s32, s32, s32);
+extern void fn_8008AEEC(unkStruct_008000*);
+extern void fn_803B3B30(unkStruct_008000*);
+extern void fn_803B7620(s32*, void*, s32, s32, s32, s32, s32);
+extern void fn_803B7D50(s32*);
+extern void fn_803B94D0(void*);
+extern void fn_803B95C0(void*);
+extern void fn_8042DBD0(u32, f32, f32);
+extern void fn_8042DC60(u32, f32, f32);
+extern void fn_8042DC80(u32, f32, f32);
+extern void fn_8042DCA0(u32, f32, f32);
+extern void fn_8042DCC0(u32, f32, f32);
+extern void fn_804318D0();
+extern void fn_8043D6F0();
+extern void fn_80444180();
+extern void fn_80445820();
+extern void fn_8044A830(void*, void*);
+extern void fn_80461268(OSTime, s32, s32);
+extern void fn_80461724();
 
 
 void fn_80008188(void) {

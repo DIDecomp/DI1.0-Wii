@@ -34,7 +34,7 @@ void fn_80008260();
 void fn_800082C0();
 s32 fn_80008358();
 void fn_80008450();
-void fn_8000849C();
+void fn_8000849C(s32);
 void fn_800084A4(s32, s32);
 void fn_800087A4();
 void fn_80008FD0();
@@ -59,6 +59,8 @@ class unkClass {
 extern unkClass* lbl_804BC764;
 extern u8 lbl_804BC77B;
 
+extern void Printf(const char*, ...);
+
 extern s32 fn_80042624();
 extern void fn_80042734(s32);
 extern void fn_80044EF4();
@@ -66,8 +68,10 @@ extern void fn_800451FC();
 extern void fn_800645E0();
 extern void fn_800646A8(s32, s32(*)(), u32, u32);
 extern void fn_8008ACA4();
+extern s32 fn_8008ACAC(const char*, s32, const char*);
 extern void fn_8008ACE8(s32);
 extern s32 fn_8008AE00(s32);
+extern unkStruct_008000* fn_8008AEA0(s32, s32, s32);
 extern s32 fn_8008AEBC(s32, s32, s32, s32);
 extern void fn_803B7620(s32*, void*, s32, s32, s32, s32, s32);
 extern void fn_803B7D50(s32*);
@@ -82,7 +86,7 @@ extern void fn_804318D0();
 extern void fn_8043D6F0();
 extern void fn_80444180();
 extern void fn_80445820();
-extern void fn_8044A830(void*, void*);
+extern void fn_8044A830(void(*)(s32), void(*)(s32));
 extern void fn_80461268(OSTime, s32, s32);
 extern void fn_80461724();
 
@@ -193,6 +197,17 @@ baseFunc lbl_804BD830[6] = {
 void fn_80008440(baseFunc** arg0) {
     baseFunc* temp = &lbl_804BD830[0];
     *arg0 = temp;
+}
+
+void fn_80008450(s32 arg0) {
+    const char* var_r5 = "\n\n";
+    s32 var_r4 = 0x81;
+    if (arg0 != arg0) {
+        Printf("State:   %04X");
+        Printf("Suspend: %04X");
+    }
+    s32 temp = fn_8008ACAC("RuntimePermanent", var_r4, var_r5);
+    fn_8008AEA0(arg0, temp, 0x20);
 }
 
 void fn_800084A4(s32 arg0, s32 arg1) {

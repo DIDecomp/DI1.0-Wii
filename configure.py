@@ -280,6 +280,7 @@ config.libs = [
             Object(NonMatching, "game/file_8000A2CC.cpp"),
             Object(NonMatching, "game/file_8000A318.cpp"),
             Object(NonMatching, "game/file_8000A3B0.cpp"),
+            Object(NonMatching, "game/file_8008120C.cpp"),
         ],
     },
     {

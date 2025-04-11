@@ -1,5 +1,5 @@
-fn_80008000 = .text:0x80008000; // type:function size:0x188
-fn_80008188 = .text:0x80008188; // type:function size:0xD8
+fn_80008000__FPCc = .text:0x80008000; // type:function size:0x188
+fn_80008188__Fv = .text:0x80008188; // type:function size:0xD8
 fn_80008260 = .text:0x80008260; // type:function size:0x60
 fn_800082C0 = .text:0x800082C0; // type:function size:0x98
 fn_80008358 = .text:0x80008358; // type:function size:0x88

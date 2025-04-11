@@ -196,7 +196,7 @@ cflags_base = [
     "-nosyspath",
     "-RTTI off",
     "-fp_contract on",
-    "-str reuse",
+    "-str pool",
     "-enc SJIS",
     "-ipa file",  # added
     "-sdata 32",  # added
@@ -218,7 +218,7 @@ else:
 cflags_runtime = [
     *cflags_base,
     "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
+    "-str readonly",
     "-gccinc",
     "-common off",
     "-inline auto",
@@ -276,6 +276,7 @@ config.libs = [
         "progress_category": "game",
         "objects": [
             Object(NonMatching, "game/file_80008000.cpp"),
+            Object(NonMatching, "game/file_80008260.cpp"),
             Object(NonMatching, "game/file_8000A2CC.cpp"),
             Object(NonMatching, "game/file_8000A318.cpp"),
             Object(NonMatching, "game/file_8000A3B0.cpp"),

@@ -24,15 +24,12 @@ typedef struct {
     s32 unk4;
 } unkStruct_0082C0;
 
-unkStruct_0084A4 lbl_80483010;
 s32 lbl_804BC780;
 s32 lbl_804BC7F8;
 // type unknown
 s32 lbl_80502268[198];
 
 // prototypes
-unkStruct_008000* fn_80008000(const char*);
-void fn_80008188();
 void fn_80008260();
 void fn_800082C0();
 s32 fn_80008358();
@@ -60,7 +57,6 @@ class unkClass {
         virtual void unk14();
 };
 extern unkClass* lbl_804BC764;
-extern void* lbl_804BC770;
 extern u8 lbl_804BC77B;
 
 extern s32 fn_80042624();
@@ -208,11 +204,11 @@ void fn_800084A4(s32 arg0, s32 arg1) {
     fn_8044A830(&fn_80008450, &fn_8000849C);
     fn_804318D0();
     for (var_r30 = 0; var_r30 <= 3; var_r30++) {
-        fn_8042DC60(var_r30, lbl_80483010.unk0, lbl_80483010.unk4);
-        fn_8042DC80(var_r30, lbl_80483010.unk8, lbl_80483010.unk4);
-        fn_8042DCA0(var_r30, lbl_80483010.unk8, lbl_80483010.unk4);
-        fn_8042DCC0(var_r30, lbl_80483010.unk8, lbl_80483010.unk4);
-        fn_8042DBD0(var_r30, lbl_80483010.unkC, lbl_80483010.unk10);
+        fn_8042DC60(var_r30, 0.05f, 1.0f);
+        fn_8042DC80(var_r30, 0.0f, 1.0f);
+        fn_8042DCA0(var_r30, 0.0f, 1.0f);
+        fn_8042DCC0(var_r30, 0.0f, 1.0f);
+        fn_8042DBD0(var_r30, 0.75f, 0.25f);
     }
     fn_8043D6F0();
     var_r31 = fn_8008AE00(0x578);

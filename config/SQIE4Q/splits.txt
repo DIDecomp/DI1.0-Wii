@@ -17,6 +17,9 @@ game/file_80008000.cpp:
 	.text       start:0x80008000 end:0x80008260
 	.rodata     start:0x80486500 end:0x80486558
 
+dolphin/os/__start.c:
+	.init       start:0x80480000 end:0x8048035C
+
 game/file_80008260.cpp:
 	.text       start:0x80008260 end:0x8000A2CC
 	.sdata2     start:0x80483000 end:0x80483040
@@ -36,6 +39,9 @@ game/file_8000A3B0.cpp:
 
 game/file_8008120C.cpp:
 	.text       start:0x8008120C end:0x801040E4
+
+dolphin/os/OSError.c:
+	.text       start:0x803AF5B0 end:0x803AFCEC
 
 sdk/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8046195C end:0x80461990

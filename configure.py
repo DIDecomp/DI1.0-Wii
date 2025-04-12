@@ -187,8 +187,7 @@ cflags_base = [
     "-fp hardware",
     "-Cpp_exceptions off",
     # "-W all",
-    "-O4,s",  # modified
-    "-use_lmw_stmw on",  # added
+    "-O4,p",
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
@@ -197,9 +196,6 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str pool",
-    "-enc SJIS",
-    "-ipa file",  # added
-    "-sdata 32",  # added
     "-i include",
     "-i include/dolphin",
     f"-i build/{config.version}/include",
@@ -217,7 +213,11 @@ else:
 # Metrowerks library flags
 cflags_runtime = [
     *cflags_base,
+    "-O4,s",
     "-use_lmw_stmw on",
+    "-ipa file",
+    "-sdata 32",
+    "-enc SJIS",
     "-str readonly",
     "-gccinc",
     "-common off",
@@ -229,6 +229,7 @@ cflags_rel = [
     *cflags_base,
     "-sdata 0",
     "-sdata2 0",
+    "-multibyte",
 ]
 
 config.linker_version = "Wii/1.7"
@@ -293,6 +294,12 @@ config.libs = [
             Object(Matching, "sdk/Runtime.PPCEABI.H/Runtime/__init_cpp_exceptions.cpp"),
         ],
     },
+    DolphinLib(
+        "os",
+        {
+            # Object(NonMatching, "dolphin/os/OSError.c"),
+        }
+    )
 ]
 
 

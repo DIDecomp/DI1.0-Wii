@@ -202,12 +202,16 @@ void fn_80008440(baseFunc** arg0) {
 void fn_80008450(s32 arg0) {
     const char* var_r5 = "\n\n";
     s32 var_r4 = 0x81;
-    if (arg0 != arg0) {
+    if (0) { //! Doesn't match: strings need to be here, but not compiled
         Printf("State:   %04X");
         Printf("Suspend: %04X");
     }
     s32 temp = fn_8008ACAC("RuntimePermanent", var_r4, var_r5);
     fn_8008AEA0(arg0, temp, 0x20);
+}
+
+s32 fn_8000849C() {
+    return 1;
 }
 
 void fn_800084A4(s32 arg0, s32 arg1) {

@@ -195,7 +195,6 @@ cflags_base = [
     "-nosyspath",
     "-RTTI off",
     "-fp_contract on",
-    "-str pool",
     "-i include",
     "-i include/dolphin",
     f"-i build/{config.version}/include",
@@ -230,6 +229,7 @@ cflags_rel = [
     "-sdata 0",
     "-sdata2 0",
     "-multibyte",
+    "-str pool",
 ]
 
 config.linker_version = "Wii/1.7"
